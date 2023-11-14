@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Bạ</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Danh Bạ</h2>
+
+    <div id="contacts">
+        <label for="name">Tên:</label>
+        <input type="text" id="name" placeholder="Tên">
+
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" id="phone" placeholder="Nhập số điện thoại">
+
+        <button onclick="themDanhBa()">Thêm</button>
+    </div>
+    <div>
+        <label for="search">Tìm Kiếm:</label>
+        <input type="text" id="search" oninput="timKiem()">
+        <button onclick="Tim()">Tim</button>
+        <button onclick="Trung()">Xóa Trùng</button>
+        <ul id="danhBa"></ul>
+    </div>
+    
+    <script src="./main.js"></script>
+
+
+</body>
+</html>
